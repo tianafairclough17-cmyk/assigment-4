@@ -1,0 +1,161 @@
+/*
+Theme Name:     Icecream_Theme
+Description:    
+Author:         tianafairclough17@gmail.com
+Template:       storefront
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+:root {
+  --primary: #ff7eb3;
+  --secondary: #ffb347;
+  --accent: #7ed6df;
+  --dark: #2f3542;
+  --light: #fffafc;
+  --text: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
+.btn {
+  background: #fff;
+  color: var(--primary);
+  padding: 0.75rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.section {
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.4rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.9rem;
+}
+
+.card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.flavors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.flavor {
+  background: var(--secondary);
+  padding: 0.6rem 1.1rem;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
